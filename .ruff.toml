@@ -1,0 +1,6 @@
+line-length = 90
+
+[format]
+quote-style = "single"
+line-ending = "lf"
+
