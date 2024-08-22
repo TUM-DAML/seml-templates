@@ -6,9 +6,14 @@ This template combines three libraries to give you some basic training infrastru
 
 
 ## Installation (Quick Guide)
-Install your project editably with dependencies
+We highly recommend using [`uv`](https://docs.astral.sh/uv/) for reproducible project management:
+```bash
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+To setup the right environment and activate it use
 ```sh
-pip install -e .
+uv sync
+source .venv/bin/activate
 ```
 *Optionally*: Install pre-commit hooks via
 ```sh
@@ -16,6 +21,16 @@ pre-commit install
 ```
 
 ## Developement
+
+**Project management**
+
+For project management, we recommend [`uv`](https://docs.astral.sh/uv/). Please read the docs carefully. Here are the most important commands
+* To add a package to your project use: `uv add <package>`, e.g., `uv add jax[cuda12]`.
+* To update your environment: `uv sync`.
+* To run a script without explicitly activating the environment, use `uv run main.py`.
+* Activate your environment: `source .venv/bin/activate`
+
+`uv` will create a lock file that exactly describes your current environment. Make sure to commit it. To recreate this environment, use `uv sync --locked`. This lock file enables the exact reproducibility of your current environment.
 
 **IDE**
 
