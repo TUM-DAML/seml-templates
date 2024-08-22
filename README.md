@@ -3,7 +3,7 @@
 This repository contains templates for [`seml`](https://github.com/TUM-DAML/seml-templates.git).
 
 ## Project structure
-This repository has the following structure 
+This repository has the following structure
 ```
 .
 ├── LICENSE

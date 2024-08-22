@@ -13,7 +13,7 @@ pip install -e .
 *Optionally*: Install pre-commit hooks via
 ```sh
 pre-commit install
-``` 
+```
 
 ## Developement
 
