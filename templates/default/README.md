@@ -19,6 +19,7 @@ source .venv/bin/activate
 ```sh
 pre-commit install
 ```
+When executing commands with `seml` make sure to always first activate your virtual environment or use `uv run seml`. Do not use `uvx seml` as `uvx` will create a temporary virtual environments where your packages are not installed.
 
 ## Developement
 
