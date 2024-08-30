@@ -4,6 +4,7 @@ version = "0.0.1"
 authors = [
     {{ name = "{user_name}", email = "{user_mail}" }},
 ]
+requires-python = ">= 3.11"
 dependencies = [
     # General science & ml
     "numpy",
@@ -32,6 +33,13 @@ dependencies = [
     "ruff",
     "pytest",
 ]
-
-requires-python = ">= 3.11"
 license = {{ text = "MIT" }}
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff.format]
+quote-style = "single"
+line-ending = "lf"
+indent-style = "space"
